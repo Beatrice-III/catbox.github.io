@@ -30,29 +30,6 @@ params:
     comments:
         enabled: false
 
-# 导航菜单配置
-menu:
-    main:
-        - identifier: home
-          name: 首页
-          url: /
-          params:
-              icon: home
-          weight: 1
-
-        - identifier: archives
-          name: 归档
-          url: /archives/
-          params:
-              icon: archives
-          weight: 2
-
-        - identifier: search
-          name: 搜索
-          url: /search/
-          params:
-              icon: search
-          weight: 3
 
 # 禁用多语言（消除重复导航条的根源）
 languages:
