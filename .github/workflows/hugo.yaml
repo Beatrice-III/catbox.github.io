@@ -3,14 +3,13 @@
         on:
           push:
             branches: ["main"]
-          workflow_dispatch: # 允许你在网页上手动点击运行
+          workflow_dispatch:
         
         permissions:
           contents: read
           pages: write
           id-token: write
         
-        # 确保同一时间只有一个部署任务在跑，避免冲突
         concurrency:
           group: "pages"
           cancel-in-progress: false
@@ -22,19 +21,17 @@
               - name: Checkout
                 uses: actions/checkout@v4
                 with:
-                  submodules: recursive # 核心：递归拉取主题子模块
-                  fetch-depth: 0        # 获取完整历史，Hugo 的某些功能需要
+                  submodules: recursive
+                  fetch-depth: 0
         
               - name: Setup Hugo
                 uses: peaceiris/actions-hugo@v3
                 with:
                   hugo-version: 'latest'
-                  extended: true        # 核心：必须开启扩展版，否则 Stack 主题无法编译样式
+                  extended: true
             
               - name: Build
-                # 如果你的配置文件确实叫 hugo.yaml，这里显式指定它
-                run: |
-                  hugo --config hugo.yaml --minify
+                run: hugo --minify
             
               - name: Upload artifact
                 uses: actions/upload-pages-artifact@v3
