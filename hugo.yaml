@@ -1,4 +1,4 @@
-baseurl: https://example.com/
+baseURL: "https://beatrice-iii.github.io/catbox.github.io/"
 languageCode: en-us
 theme: hugo-theme-stack
 title: Example Site
@@ -35,7 +35,7 @@ languages:
         params:
             sidebar:
                 subtitle: 演示說明
-
+    
     ja:
         languageName: 日本語
         title: サンプルサイト
@@ -77,11 +77,11 @@ params:
     footer:
         since: 2020
         customText:
-
+    
     dateFormat:
         published: Jan 02, 2006
         lastUpdated: Jan 02, 2006 15:04 MST
-
+    
     sidebar:
         emoji: 🍥
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -89,7 +89,7 @@ params:
             enabled: true
             local: true
             src: img/avatar.png
-
+    
     article:
         math: false
         toc: true
@@ -97,34 +97,34 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
-
+    
     comments:
         enabled: true
         provider: disqus
-
+    
         disqusjs:
             shortname:
             apiUrl:
             apiKey:
             admin:
             adminLabel:
-
+    
         utterances:
             repo:
             issueTerm: pathname
             label:
-
+    
         beaudar:
             repo:
             issueTerm: pathname
             label:
             theme:
-
+    
         remark42:
             host:
             site:
             locale:
-
+    
         vssue:
             platform:
             owner:
@@ -132,7 +132,7 @@ params:
             clientId:
             clientSecret:
             autoCreateIssue: false
-
+    
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
             serverURL:
@@ -147,19 +147,19 @@ params:
             locale:
                 admin: Admin
                 placeholder:
-
+    
         twikoo:
             envId:
             region:
             path:
             lang:
-
+    
         # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
         cactus:
             defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
             serverName: "cactus.chat"
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
-
+    
         giscus:
             repo:
             repoID:
@@ -170,7 +170,7 @@ params:
             darkTheme:
             reactionsEnabled: 1
             emitMetadata: 0
-
+    
         gitalk:
             owner:
             admin:
@@ -178,7 +178,7 @@ params:
             clientID:
             clientSecret:
             proxy:
-
+    
         cusdis:
             host:
             id:
@@ -196,28 +196,28 @@ params:
                   limit: 10
         page:
             - type: toc
-
+    
     opengraph:
         twitter:
             # Your Twitter username
             site:
-
+    
             # Available values: summary, summary_large_image
             card: summary_large_image
-
+    
     defaultImage:
         opengraph:
             enabled: false
             local: false
             src:
-
+    
     colorScheme:
         # Display toggle
         toggle: true
-
+    
         # Available values: auto, light, dark
         default: auto
-
+    
     imageProcessing:
         cover:
             enabled: true
@@ -236,7 +236,7 @@ menu:
           url: https://github.com/CaiJimmy/hugo-theme-stack
           params:
               icon: brand-github
-
+    
         - identifier: twitter
           name: Twitter
           url: https://twitter.com
