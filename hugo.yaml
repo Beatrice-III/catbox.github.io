@@ -17,7 +17,8 @@ params:
         subtitle: "逻辑海中的观测站"
         avatar:
             enabled: true
-            src: "https://github.com/Beatrice-III.png" # 自动调用你的 GitHub 头像
+            local: false  # <--- 关键：必须显式设置为 false
+            src: "https://github.com/Beatrice-III.png"
 
     # 文章页脚的版权声明
     article:
