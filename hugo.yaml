@@ -3,7 +3,7 @@ title: "我的猫盒博客"
 languageCode: zh-cn
 theme: stack
 
-# 必须启用 JSON 输出，否则搜索功能将处于死锁状态
+# 必须启用 JSON 输出,否则搜索功能将处于死锁状态
 outputs:
     home: [HTML, RSS, JSON]
 
